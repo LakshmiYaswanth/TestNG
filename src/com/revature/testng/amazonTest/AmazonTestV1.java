@@ -26,6 +26,7 @@ public class AmazonTestV1 {
 	    element.submit();
 	    Assert.assertTrue(true);
 	}
+	   
 	@Test(dependsOnMethods="openAmazon")
 	public void Homepage() {
 		element=driver.findElement(By.xpath("//span[contains(text(),'Amazon.in')]"));
